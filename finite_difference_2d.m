@@ -1,12 +1,12 @@
 %Rohan Vemu, BE310, Synthetic Biology Problem Set
 %Modeling 2D Fick's Second Law via Finite Difference Approximation 
 %% Defining Parameters
-radius_plate = 30; %in mm
+radius_plate = 42.5; %in mm
 radius_disk = 2.5; %in mm 
 T = 24*60; %in minutes
-D = 0.15; %mm^2/min
+D = 0.075; %mm^2/min
 d_AHL = 4.8135e-4; %min-1
-sourceconc = 1000; %in uM
+sourceconc = 10; %in uM
 %% Defining the X,Y Mesh 
 dx = radius_plate/100; %note dx=dy=delta p, for 201 points 
 xgrid = [-radius_plate:dx:radius_plate]; % centers the grid in x around zero

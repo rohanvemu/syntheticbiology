@@ -3,9 +3,10 @@
 function dy=synbio(t, y, i, j)
 
 p_r = 0.5;
-Lux_R = 0.01;
+Lux_R = 0.02;
 % Lux_R = linspace(0, 0.1, 21);
 AHL = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2].*10^6;
+AHL = logspace(-4,4,50);
 delta_r = 0.0231;
 % delta_r = linspace(0, 0.1, 201);
 alpha_TX_gfp = 0.05;
